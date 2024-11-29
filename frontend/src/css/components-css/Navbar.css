@@ -1,0 +1,60 @@
+/* Navbar Styles */
+nav {
+    background-color: #080537; /* Fondo oscuro personalizado */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem; /* py-5 px-10 */
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+    margin: 0;
+  }
+  
+  nav h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 0.5rem; /* Espaciado horizontal entre elementos */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    color: white;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Bordes redondeados */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1a1a64; /* Hover ligeramente más claro */
+  }
+  
+  .nav-button {
+    background-color: #1f1f4a; /* Fondo oscuro para botones */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Bordes redondeados */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-button:hover {
+    background-color: #33337a; /* Hover más claro */
+  }
+  

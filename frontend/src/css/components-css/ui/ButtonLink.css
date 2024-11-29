@@ -1,0 +1,21 @@
+/* Estilo para el componente ButtonLink */
+.button-link {
+    background-color: #6366f1; /* Color de fondo (bg-indigo-500) */
+    padding: 0.25rem 1rem; /* Relleno interno: py-1 (vertical), px-4 (horizontal) */
+    border-radius: 0.375rem; /* Bordes redondeados (rounded-md) */
+    text-decoration: none; /* Elimina subrayado del enlace */
+    color: #ffffff; /* Color del texto */
+    font-weight: 500; /* Peso del texto para mayor visibilidad */
+    text-align: center; /* Asegura que el texto esté centrado */
+    display: inline-block; /* Mantiene comportamiento de botón */
+    transition: background-color 0.2s ease, transform 0.1s ease; /* Transiciones suaves */
+  }
+  
+  .button-link:hover {
+    background-color: #4f46e5; /* Color más oscuro al pasar el cursor */
+  }
+  
+  .button-link:active {
+    transform: scale(0.98); /* Efecto de clic con escala */
+  }
+  

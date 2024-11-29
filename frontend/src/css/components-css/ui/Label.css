@@ -1,0 +1,9 @@
+/* Estilo de las etiquetas */
+.label {
+    font-size: 0.75rem; /* Tamaño del texto (text-xs) */
+    display: block; /* Asegura que la etiqueta ocupe toda la línea (block) */
+    margin: 0.25rem 0; /* Espaciado vertical (my-1) */
+    color: #cbd5e1; /* Color del texto (text-slate-300) */
+    margin-top: 1.5rem;
+  }
+  

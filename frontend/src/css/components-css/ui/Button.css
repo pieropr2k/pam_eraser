@@ -1,0 +1,30 @@
+/* Botón Principal */
+button {
+    background-color: #6366f1; /* Color de fondo (bg-indigo-500) */
+    color: #ffffff; /* Color del texto */
+    padding: 0.25rem 1rem; /* Espaciado interno (px-4, py-1) */
+    border-radius: 0.375rem; /* Bordes redondeados (rounded-md) */
+    border: none; /* Sin bordes predeterminados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    margin: 0.5rem 0; /* Margen vertical (my-2) */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición para hover y active */
+  }
+  
+  /* Efecto Hover */
+  button:hover {
+    background-color: #4f46e5; /* Oscurece el color de fondo al pasar el mouse */
+  }
+  
+  /* Efecto Active */
+  button:active {
+    transform: scale(0.98); /* Pequeña reducción de tamaño al hacer clic */
+  }
+  
+  /* Botón Deshabilitado */
+  button:disabled {
+    background-color: #a5b4fc; /* Color de fondo para estado deshabilitado (disabled:bg-indigo-300) */
+    cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+    opacity: 0.7; /* Reduce ligeramente la opacidad */
+  }
+  

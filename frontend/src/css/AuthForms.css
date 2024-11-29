@@ -1,0 +1,73 @@
+/* General Layout */ 
+  
+  .mt-1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgb(237, 130, 166);
+  }
+
+  /* Centering container */
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .gap-x-2 {
+    column-gap: 0.5rem;
+  }
+  
+  .card {
+    margin-top: 3.5rem;
+  }
+  
+  /* Heading */
+  .card h1 {
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  
+  /* Error Messages */
+  .errors-label {
+    color: #e3342f;
+    font-size: 0.875rem;
+    margin-top:  0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Link */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .text-sky-500 {
+    color: #00bfff;
+  }
+  
+  .text-sky-500:hover {
+    text-decoration: underline;
+  }
+  

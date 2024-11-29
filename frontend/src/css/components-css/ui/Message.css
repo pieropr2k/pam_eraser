@@ -1,0 +1,9 @@
+.message {
+    color: #e2e8f0; /* slate-200 */
+    background-color: #ef4444; /* red-500 */
+    padding: 0.5rem 0.75rem; /* py-2 px-3 */
+    font-size: 0.875rem; /* text-sm */
+    border-radius: 0.125rem; /* rounded-sm */
+    margin-bottom: 0.25rem; /* mb-1 */
+  }
+  
