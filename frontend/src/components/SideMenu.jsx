@@ -2,14 +2,12 @@
 import { Link } from "react-router-dom";
 
 import "../css/components-css/SideMenu.css";
-import { useRecipes } from '../context/recipesContext';
-import { useAuth } from "../context/authContext";
+import { useRecipes } from '../context/recipesContext'; 
 
 //const SideMenu = ({ CategorySelected, setCategorySelected }) => {
 const SideMenu = () => {
 
-  const { category, updateCategory } = useRecipes()
-  const {logout} = useAuth(); 
+  const { category, updateCategory } = useRecipes() 
 
   console.log(category)
   
@@ -39,7 +37,7 @@ const SideMenu = () => {
         ))}
       </ul> 
       
-      <Link to="/" onClick={() => logout()}>
+      <Link to="/" onClick={null}>
         <button>Salir</button>
       </Link>
     </aside>

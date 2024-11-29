@@ -1,4 +1,4 @@
-import { useAuth } from "../context/authContext";
+ 
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
@@ -14,38 +14,20 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm({
     resolver: zodResolver(loginSchema),
-  });
-  const { signin, error, isAuthenticated } = useAuth();
-  console.log(error);
+  });  
   const navigate = useNavigate();
 
-  const onSubmit = (data) => signin(data);
-    /*
-    { 
-    try {
-signin(data);
-    } catch (e) {
-      console.log(error);   
-      console.log(e);     
-      console.log(e, "error");     
-    }
-    
+  const onSubmit = (data) => console.log(data);
+    //signin(data); 
 
-  };
-  */
-
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate("/");
-    }
-  }, [isAuthenticated]);
+   
 
   return (
     <div className="forms flex items-center justify-center">
       <Card>
         {
-         // Editas el componente Message su diseño
-        error && <Message message={error}  />
+         //  Errores
+        //error && <Message message={error}  />
         }
         <h1 className="text-2xl font-bold">Entrar</h1>
 

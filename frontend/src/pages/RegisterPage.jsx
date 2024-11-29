@@ -3,12 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { Card, Message, Button, Input, Label } from "../components/ui";
 import { useForm } from "react-hook-form";
 import { registerSchema } from "../schemas/auth";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useAuth } from "../context/authContext";
+import { zodResolver } from "@hookform/resolvers/zod"; 
 import "../css/AuthForms.css";
 
-const RegisterPage = () => {
-  const { signup,  error, isAuthenticated } = useAuth();
+const RegisterPage = () => { 
   const {
     register,
     handleSubmit,
@@ -18,20 +16,15 @@ const RegisterPage = () => {
   });
   const navigate = useNavigate();
 
-  const onSubmit = async (value) => {
-    await signup(value);
-  };
-
-  useEffect(() => {
-    if (isAuthenticated) navigate("/");
-  }, [isAuthenticated]);
+  const onSubmit = (value) => console.log(value);
+ 
 
   return (
     <div className="mt-5 flex items-center justify-center">
       <Card>
         {
           // Editas el componente Message su diseño
-          error && <Message message={error}  />
+          //error && <Message message={error}  />
         }
         <h1 className="text-3xl font-bold mb-6">Registrar</h1>
         <form onSubmit={handleSubmit(onSubmit)}>

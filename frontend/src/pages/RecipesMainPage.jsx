@@ -4,10 +4,7 @@ import RecipeContainer from "../components/RecipeContainer.jsx"
 import { useForm } from "../hooks/useForm"
 import "../css/App.css"
 
-const RecipesMainPage = () => {
-  //const [CategorySelected, setCategorySelected] = useState("All")
-  //CategorySelected={CategorySelected} 
-  //setCategorySelected={setCategorySelected} 
+const RecipesMainPage = () => { 
   return (
     <div className="app-container">
       <SideMenu 
@@ -17,21 +14,7 @@ const RecipesMainPage = () => {
         />
       </div>
     </div>
-  );
-  /*
-<div className="main-container">
-        <Search 
-            formState={formState} 
-            onInputChange={onInputChange} 
-        />
-        
-        <RecipeContainer 
-            recipeSearch = {formState.recipe}
-            CategorySelected={CategorySelected} 
-            setCategorySelected={setCategorySelected} 
-        />
-      </div>
-  */
+  ); 
 };
 
 export default RecipesMainPage;
